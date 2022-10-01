@@ -17,7 +17,7 @@ export class AllRestaurants extends React.Component {
     return (
       <main>
       <div className="restaurants">
-        <h2>Restaurants</h2>
+        <h2>Journal Entries</h2>
           <CreateRestaurant />
         <ul>
           {this.props.restaurants.map(restaurant => (
@@ -25,7 +25,7 @@ export class AllRestaurants extends React.Component {
               <h2>
                 <Link to={`/restaurants/${restaurant.id}`}>{restaurant.name}</Link>
               </h2>
-              <p>{restaurant.description}</p>
+              {/* <p>{restaurant.description}</p> */}
               <p>{restaurant.address}</p>
               <img src={restaurant.imageUrl} />
               <form onSubmit={(ev) => ev.preventDefault()}>

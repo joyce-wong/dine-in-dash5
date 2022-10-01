@@ -31,12 +31,12 @@ class CreateRestaurant extends Component {
         return (
         <div>
             <form id="restaurant-form" onSubmit={handleSubmit}>
-                <h3>Create Restaurant</h3>
+                <h3>Create Entry</h3>
                 <div>
                 <label htmlFor="name">Name:</label>
                 <input name="name" onChange={handleChange} value={name} />
 
-                <label htmlFor="address">Address:</label>
+                <label htmlFor="address">Entry:</label>
                 <input name="address" onChange={handleChange} value={address} />
 
                 <button type="submit">Submit</button>

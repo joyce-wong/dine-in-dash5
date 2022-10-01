@@ -48,12 +48,12 @@ render(){
     const {handleSubmit, handleChange} = this;
     return (
         <div>
-            <h3>Edit Restaurant</h3>
+            <h3>Edit Entry</h3>
             <form id="edit-restaurant" onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name">Title:</label>
                 <input name="name" onChange={handleChange} value={name} />
 
-                <label htmlFor="address">Address:</label>
+                <label htmlFor="address">Entry:</label>
                 <input name="address" onChange={handleChange} value={address} />
 
                 <button type="submit">Submit</button>

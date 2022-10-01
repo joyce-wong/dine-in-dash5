@@ -28,21 +28,21 @@ class Restaurant extends Component{
                 <EditRestaurant match={this.props.match} />
                 <h1>{singleRestaurant.name}</h1>
                 <p>{singleRestaurant.address}</p>
-                <p>{singleRestaurant.description}</p>
+                {/* <p>{singleRestaurant.description}</p> */}
                 <img src={singleRestaurant.imageUrl} />
-                <h2>Users</h2>
+                {/* <h2>Users</h2>
                 <div className="user">
                     {users.length ? users.map(user => (
                         <div key={user.id} >
                             <h3>
                             <Link to={`/users/${user.id}`}>{user.username}</Link>
                             </h3>
-                            {/* <form id="unregister-user" onSubmit={(ev) => ev.preventDefault()}>
+                            <form id="unregister-user" onSubmit={(ev) => ev.preventDefault()}>
                             <button type="submit" onClick={() => this.props.unregisterUser(user, restaurant)}>Unregister</button>
-                            </form> */}
+                            </form>
                         </div>
                     )) : <p>There are no users dining here.</p>}
-                </div>
+                </div> */}
             </div>
         )
     }
