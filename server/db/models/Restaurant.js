@@ -10,7 +10,7 @@ module.exports = db.define('restaurant', {
         }
     },
     address: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false,
         validate: {
             notEmpty: true,

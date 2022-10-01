@@ -26,6 +26,7 @@ export class AllRestaurants extends React.Component {
                 <Link to={`/restaurants/${restaurant.id}`}>{restaurant.name}</Link>
               </h2>
               <p>{restaurant.description}</p>
+              <p>{restaurant.address}</p>
               <img src={restaurant.imageUrl} />
               <form onSubmit={(ev) => ev.preventDefault()}>
               <button
