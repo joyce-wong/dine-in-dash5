@@ -4,9 +4,11 @@ import thunkMiddleware from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import auth from './auth'
 import restaurantsReducer from './restaurants'
+import restaurantReducer from './singleRestaurant'
 
 const reducer = combineReducers({ auth,
-restaurants: restaurantsReducer })
+restaurants: restaurantsReducer,
+restaurant: restaurantReducer })
 const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
 )
