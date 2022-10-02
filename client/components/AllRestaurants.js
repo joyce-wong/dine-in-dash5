@@ -17,8 +17,8 @@ export class AllRestaurants extends React.Component {
     return (
       <main>
       <div className="restaurants">
-        <h2>Journal Entries</h2>
-          <CreateRestaurant />
+        <h1>Journal Entries</h1>
+          <CreateRestaurant style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',}}/>
         <ul>
           {this.props.restaurants.map(restaurant => (
             <div className="restaurant" key={restaurant.id} >

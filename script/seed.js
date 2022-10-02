@@ -45,19 +45,19 @@ async function seed() {
   
   const restaurants = await Promise.all([
     Restaurant.create({
-      name: 'Howl\'s Moving Castle',
+      name: 'My Dream Invention: Howl\'s Moving Castle',
       address: 'Duis at elit nisi. Donec fermentum malesuada eros, ut hendrerit lacus rutrum id. Integer vehicula, enim sed imperdiet iaculis, erat eros mollis enim, id dapibus ante mi sit amet ante. Donec nibh arcu, tempor quis volutpat at, finibus ultrices est. In est odio, eleifend a leo id, dictum pretium enim. Nam vitae augue congue, sagittis nisl ut, feugiat ipsum. Proin neque nunc, venenatis ut luctus quis, pharetra non diam.',
       imageUrl: 'https://ubisoft-avatars.akamaized.net/30fd15ef-9e54-458b-9f42-9f4bc2e9a5ff/default_256_256.png',
       description: 'Howl the wizard flies around in a mechanical castle powered by Calcifer.'
     }),
     Restaurant.create({
-      name: 'Yubaba\'s Bathhouse',
+      name: 'Day Trip to Yubaba\'s Bathhouse',
       address: 'Sed a augue nisi. Sed a efficitur lacus. Maecenas facilisis at quam sit amet sagittis. Proin iaculis nec lacus non vestibulum. Mauris sollicitudin lorem a lectus porttitor, id accumsan dolor feugiat. Sed sed dapibus urna. Nunc eget dapibus orci. Curabitur finibus ipsum a enim luctus, a sollicitudin orci vestibulum. Vestibulum suscipit nunc lorem, elementum egestas tellus placerat sit amet. Ut efficitur dignissim posuere. Sed tellus purus, feugiat vitae blandit faucibus, blandit aliquam risus. Aenean molestie ullamcorper molestie. Nulla ipsum lectus, vulputate non pulvinar non, aliquam sit amet odio.',
       imageUrl: 'https://studioghiblimovies.com/wp-content/uploads/2017/12/japan-hayao-miyazaki-trees-spirited-away-bathroom-houses-spirit-ben-anime-house-cloud-ghibli-bath-ch-wallpaper-455520.jpg',
       description: 'Relax at this bathhouse with river spirits.'
     }),
     Restaurant.create({
-      name: 'Dai I Chu Junior High School',
+      name: 'My First Day at Dai I Chu Junior High School',
       address: 'Fusce sit amet libero leo. Vivamus eget semper lectus. Integer lorem est, porttitor lacinia porttitor ac, facilisis eu eros. Quisque at eros ante. Quisque ullamcorper pretium quam, at maximus nibh sollicitudin in. Maecenas condimentum tincidunt lectus, non bibendum ligula interdum eu. Suspendisse ac elit leo. Aliquam id fringilla sem.',
       imageUrl: 'https://umaiyomu.files.wordpress.com/2019/01/school2.jpg?w=640',
       description: 'Make friends, borrow books from the library, and play the violin.'

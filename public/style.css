@@ -83,3 +83,11 @@ display: flex;
   align-content: flex-start;
   align-items: flex-start;
 }
+
+/* button {
+  align-self: flex-end;
+} */
+
+input.right {
+  float: right;
+}
