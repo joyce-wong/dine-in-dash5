@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { createRestaurant } from '../store/restaurants';
 import { connect } from 'react-redux';
+import { Button } from '@material-ui/core';
 
 class CreateRestaurant extends Component {
     constructor(){
@@ -39,7 +40,13 @@ class CreateRestaurant extends Component {
                 <label htmlFor="address">Entry:</label>
                 <input name="address" onChange={handleChange} value={address} />
 
-                <button type="submit">Submit</button>
+                {/* <button type="submit">Submit</button> */}
+                {/* <Button variant="contained" color="primary">
+  Submit
+</Button> */}
+  <Button variant="outlined" color="primary">
+  Submit
+  </Button>
                 </div>
             </form>
         </div>

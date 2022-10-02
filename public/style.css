@@ -10,12 +10,29 @@ label {
   display: block;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #006d77;
+}
+
 nav a {
   display: inline-block;
+  padding: 10px;
   margin: 1em;
 }
 
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.brand_image {
+  width: 25%;
+  margin: 2rem;
+  border-radius:0px 0px 5px 5px;
 }
