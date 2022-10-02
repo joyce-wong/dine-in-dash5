@@ -6,6 +6,7 @@ import Home from './components/Home';
 import {me} from './store'
 import AllRestaurants from './components/AllRestaurants';
 import Restaurant from './components/Restaurant';
+import WelcomePage from './components/WelcomePage';
 
 /**
  * COMPONENT
@@ -22,6 +23,8 @@ class Routes extends Component {
       <div>
         {isLoggedIn ? (
           <Switch>
+            <Route path='/' exact component={ WelcomePage } />
+            <Route exact path="/login" component={WelcomePage} />
             <Route exact path="/home" component={Home} />
             {/* <Redirect to="/home" /> */}
             <Route exact path="/restaurants" component={AllRestaurants} />
