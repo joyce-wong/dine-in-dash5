@@ -1,5 +1,11 @@
+#app{
+  font-family: Roboto;
+  background-color: #ffddd2;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: Roboto;
+  background-color: #ffddd2;
 }
 
 a {
@@ -12,27 +18,68 @@ label {
 
 nav {
   display: flex;
+  /* flex-direction: row; */
   align-items: center;
   justify-content: space-around;
-  height: 80px;
-  padding: 20px;
-  font-size: 14px;
+  height: 90px;
+  padding: 30px;
+  font-size: 20px;
   background-color: #006d77;
 }
 
 nav a {
-  display: inline-block;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-around;
   padding: 10px;
   margin: 1em;
+  color: #edf6f9;
+}
+
+nav a:hover {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 1em;
+  color: #9f86c0;
 }
 
 form div {
   margin: 1em;
-  display: inline-block;
+  display: flexbox;
 }
+
+.restaurants {
+background-color: #ffddd2;
+font-family: Roboto;
+display: flex;
+}
+
+.restaurant {
+  background-color: #ffddd2;
+  font-family: Roboto;
+  flex-direction: column;
+  align-content: stretch;
+  }
+
+  .journal-field {
+    height: 15rem;
+    width: 30rem;
+    margin: 1em;
+    padding: 1em;
+  }
 
 .brand_image {
   width: 25%;
   margin: 2rem;
   border-radius:0px 0px 5px 5px;
+}
+
+#create-restaurant {
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }

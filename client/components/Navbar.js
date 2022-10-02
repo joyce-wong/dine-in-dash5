@@ -6,11 +6,6 @@ import {logout} from '../store'
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
     <h1>My Journal</h1>
-    {/* <img
-      className="brand-image"
-      src="https://live.staticflickr.com/65535/52388139047_674b5e1fe8_b.jpg"
-      alt="Adventurer's Apothecary logo"
-    /> */}
     <nav>
       {isLoggedIn ? (
         <div>

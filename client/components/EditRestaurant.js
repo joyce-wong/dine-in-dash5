@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { fetchRestaurant, setRestaurant, updateRestaurant } from '../store/singleRestaurant';
 import { connect } from 'react-redux';
+import {Button} from '@material-ui/core'
 
 
 class EditRestaurant extends Component {
@@ -49,14 +50,17 @@ render(){
     return (
         <div>
             <h3>Edit Entry</h3>
-            <form id="edit-restaurant" onSubmit={handleSubmit}>
+            <form className="restaurant-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">Title:</label>
                 <input name="name" onChange={handleChange} value={name} />
 
                 <label htmlFor="address">Entry:</label>
-                <input name="address" onChange={handleChange} value={address} />
+                <input className="journal-field" name="address" onChange={handleChange} value={address} />
 
                 <button type="submit">Submit</button>
+                {/* <Button variant="outlined" color="primary">
+  Submit
+  </Button> */}
             </form>
         </div>
         )
