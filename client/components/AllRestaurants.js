@@ -19,7 +19,6 @@ export class AllRestaurants extends React.Component {
       <div className="restaurants">
         <h1>Journal Entries</h1>
           <CreateRestaurant style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',}}/>
-        <ul>
           {this.props.restaurants.map(restaurant => (
             <div className="restaurant" key={restaurant.id} >
               <h2>
@@ -39,7 +38,6 @@ export class AllRestaurants extends React.Component {
               </form>
             </div>
           ))}
-        </ul>
       </div>
       </main>
     )

@@ -1,11 +1,18 @@
 #app{
   font-family: Roboto;
-  background-color: #ffddd2;
+  background-color: #83c5be;
+  /* margin-left: 50px; */
 }
 
 body {
   font-family: Roboto;
-  background-color: #ffddd2;
+  background-color: #83c5be;
+  /* margin-left: 50px; */
+}
+
+p {
+  font-size: 20px;
+  margin-left: 30px;
 }
 
 a {
@@ -47,22 +54,25 @@ nav a:hover {
   color: #9f86c0;
 }
 
-form div {
+/* form div {
   margin: 1em;
   display: flexbox;
-}
+} */
 
 .restaurants {
-background-color: #ffddd2;
+background-color: #83c5be;
 font-family: Roboto;
 display: flex;
+flex-direction: column;
+align-content: center;
 }
 
 .restaurant {
-  background-color: #ffddd2;
+  background-color: #83c5be;
   font-family: Roboto;
-  flex-direction: column;
+  flex-direction: row;
   align-content: stretch;
+  align-self: center;
   }
 
   .journal-field {
@@ -79,15 +89,25 @@ display: flex;
 }
 
 #create-restaurant {
+  display: block;
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
 }
 
-/* button {
-  align-self: flex-end;
-} */
+button {
+ position: sticky; 
+ background-color: #ffddd2;
+}
 
 input.right {
   float: right;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: left;
 }
