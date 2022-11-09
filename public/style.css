@@ -25,7 +25,7 @@ label {
 
 nav {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   height: 90px;
@@ -35,7 +35,7 @@ nav {
 }
 
 nav a {
-  display: flex;
+  display: inline-block;
   /* flex-direction: row; */
   align-items: center;
   justify-content: space-around;
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-  display: flex;
+  display: inline-block;
   /* flex-direction: row; */
   align-items: center;
   justify-content: space-around;
@@ -65,6 +65,7 @@ font-family: Roboto;
 display: flex;
 flex-direction: column;
 align-content: center;
+align-self: center;
 }
 
 .restaurant {
@@ -82,8 +83,8 @@ align-content: center;
     padding: 1em;
   }
 
-.brand_image {
-  width: 25%;
+#welcome {
+  width: 100%;
   margin: 2rem;
   border-radius:0px 0px 5px 5px;
 }
