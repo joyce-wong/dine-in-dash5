@@ -89,6 +89,12 @@ align-self: center;
   border-radius:0px 0px 5px 5px;
 }
 
+#auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #create-restaurant {
   display: block;
   justify-content: center;
