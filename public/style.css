@@ -73,7 +73,10 @@ align-self: center;
   font-family: Roboto;
   flex-direction: row;
   align-content: stretch;
-  align-self: center;
+  /* align-self: center; */
+  justify-content: center;
+  align-items: center;
+  text-align: start;
   }
 
   .journal-field {
