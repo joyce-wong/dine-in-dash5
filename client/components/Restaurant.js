@@ -29,7 +29,7 @@ class Restaurant extends Component{
                 <h1>{singleRestaurant.name}</h1>
                 <p>{singleRestaurant.address}</p>
                 {/* <p>{singleRestaurant.description}</p> */}
-                <img src={singleRestaurant.imageUrl} />
+                <img className="image" src={singleRestaurant.imageUrl} />
                 {/* <h2>Users</h2>
                 <div className="user">
                     {users.length ? users.map(user => (

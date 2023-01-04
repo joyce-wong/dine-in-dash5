@@ -64,19 +64,26 @@ background-color: #83c5be;
 font-family: Roboto;
 display: flex;
 flex-direction: column;
-align-content: center;
+align-content: stretch;
 align-self: center;
+justify-content: center;
 }
 
 .restaurant {
   background-color: #83c5be;
   font-family: Roboto;
-  flex-direction: row;
-  align-content: stretch;
+  /* flex-direction: row; */
+  align-content: center;
   /* align-self: center; */
   justify-content: center;
   align-items: center;
   text-align: start;
+  }
+
+  .image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .journal-field {
@@ -105,9 +112,17 @@ align-self: center;
   align-items: flex-start;
 }
 
-button {
- position: sticky; 
+/* button {
+ position: fixed; 
+ bottom: -4px;
+ right: 10px;
  background-color: #ffddd2;
+} */
+
+.remove {
+  position: relative;
+  bottom:-4px;
+  right:10px;
 }
 
 input.right {

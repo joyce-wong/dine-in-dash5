@@ -26,8 +26,9 @@ export class AllRestaurants extends React.Component {
               </h2>
               {/* <p>{restaurant.description}</p> */}
               <p>{restaurant.address}</p>
-              <img src={restaurant.imageUrl} />
+              <img className="image" src={restaurant.imageUrl} />
               <form onSubmit={(ev) => ev.preventDefault()}>
+                <span style={{justifyContent: 'right'}}>
               <button
               type="submit"
               className="remove"
@@ -35,6 +36,7 @@ export class AllRestaurants extends React.Component {
               >
                 Delete
               </button>
+                </span>
               </form>
             </div>
           ))}
