@@ -1,77 +1,32 @@
-# FS-App-Template
+# My Journal
 
-## Setup
+My Journal is an application that allows users to create, read, update, and delete their journal entries. It features log in through JWT authentication and BCrypt and was styled using Material UI. It was created as a hackathon project in 4 days.
 
-To use this as boilerplate, you'll need to take the following steps:
+Technologies used:
 
-* Don't fork or clone this repo! Instead, create a new, empty
-  directory on your machine and `git init` (or create an empty repo on
-  Github and clone it to your local machine)
+- [PostgreSQL](https://www.postgresql.org)
+- [Sequelize](https://sequelize.org)
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com)
+- [JSON Web Token](https://jwt.io)
+- BCrypt
+- [React](https://reactjs.org)
+- [Redux](https://redux.js.org)
+- [Material UI](https://mui.com/)
+- [Render](https://www.render.com/)
 
-* Now you will have to add the fs-app-template as a remote and merge it into your own repository.
+## Installation
 
-```
-git remote add boilermaker git@github.com:FullstackAcademy/fs-app-template.git
-git fetch boilermaker
-git merge boilermaker/main
-git branch -m master main
-```
+In the project directory, you will need to:
 
-## Customize
+1. Install NPM packages `npm install`
+2. Create database `createdb dine-in-dash5` and seed file `npm run seed`
+3. Start server `npm run start:dev` and open [http://localhost:8080](http://localhost:8080) to view it in your browser
 
-Now that you've got the code, follow these steps to get acclimated:
+## Application
 
-* Update project name and description in `package.json`
-* `npm install`
-* Create two postgres databases (`MY_APP_NAME` should match the `name`
-  parameter in `package.json`):
-* These commands will create both your **development** and **test** databases
+Deployed link: [My Journal](https://my-journal.onrender.com/)
 
-```
-createdb <YOUR APP NAME HERE FROM package.json>
-createdb <YOUR APP NAME HERE FROM package.json>-test
-```
+## Meet the Team
 
-* By default, running `npm test` will use your test database, while
-  regular development uses development database
-
-## Start
-
-Sync and seed your database by running `npm run seed`. Running `npm run start:dev` will make great things happen!
-
-- start:dev will both start your server and build your client side files using webpack
-- start:dev:logger is the same as start:dev, but you will see your SQL queries (can be helpful for debugging)
-- start:dev:seed will start your server and also seed your database (this is useful when you are making schema changes and you don't want to run your seed script separately)
-
-
-### Heroku
-
-1.  Set up the [Heroku command line tools][heroku-cli]
-2.  `heroku login`
-3.  Add a git remote for heroku:
-
-[heroku-cli]: https://devcenter.heroku.com/articles/heroku-cli
-
-* **If you are creating a new app...**
-
-  1.  `heroku create` or `heroku create your-app-name` if you have a
-      name in mind.
-  2.  `heroku config:set JWT=<your secret here!>` to set a secret for JWT signing
-
-Database Setup
-
-  3.  `heroku addons:create heroku-postgresql:hobby-dev` to add
-      ("provision") a postgres database to your heroku dyno (This creates your production database)
-
-  4.  `heroku config:set SEED=true` to get heroku to sync and seed your database
-
-  5.   note everytime your app restarts, the database tables will be dropped and re-created. To avoid this you can `config:unset SEED`
-
-
-* **If you already have a Heroku app...**
-
-  1.  `heroku git:remote your-app-name` You'll need to be a
-      collaborator on the app.
-
-
-Now, you should be deployed!
+[Joyce Wong](https://github.com/joyce-wong) <br />
