@@ -64,7 +64,7 @@ background-color: #83c5be;
 font-family: Roboto;
 display: flex;
 flex-direction: column;
-align-content: stretch;
+align-content: space-between;
 align-self: center;
 justify-content: center;
 }
@@ -72,12 +72,16 @@ justify-content: center;
 .restaurant {
   background-color: #83c5be;
   font-family: Roboto;
+  position: relative;
   /* flex-direction: row; */
   align-content: center;
   /* align-self: center; */
   justify-content: center;
   align-items: center;
   text-align: start;
+  margin: 25px;
+  /* margin-bottom: auto;
+  border-bottom: 10px; */
   }
 
   .image {
@@ -120,9 +124,9 @@ justify-content: center;
 } */
 
 .remove {
-  position: relative;
-  bottom:-4px;
-  right:10px;
+  position: absolute;
+  bottom: -35px;
+  right:36rem;
 }
 
 input.right {
