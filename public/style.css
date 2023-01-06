@@ -7,6 +7,8 @@
 body {
   font-family: Roboto;
   background-color: #83c5be;
+  height: 100vh;
+  width: 100vw;
   /* margin-left: 50px; */
 }
 
@@ -107,6 +109,10 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 #create-restaurant {
