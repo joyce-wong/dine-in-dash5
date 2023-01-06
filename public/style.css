@@ -99,11 +99,11 @@ justify-content: center;
     padding: 1em;
   }
 
-#welcome {
+/* #welcome {
   width: 100%;
   margin: 2rem;
   border-radius:0px 0px 5px 5px;
-}
+} */
 
 #auth {
   display: flex;
