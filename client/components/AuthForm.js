@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {authenticate} from '../store'
+import Button from '@material-ui/core/Button'
 
 /**
  * COMPONENT
@@ -25,6 +26,15 @@ const AuthForm = props => {
         </div>
         <div>
           <button type="submit">{displayName}</button>
+          {/* <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            // className={classes.submit}
+          >
+            {displayName}
+          </Button> */}
         </div>
         {error && error.response && <div> {error.response.data} </div>}
       </form>
