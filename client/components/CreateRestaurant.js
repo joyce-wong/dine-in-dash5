@@ -54,10 +54,10 @@ class CreateRestaurant extends Component {
         return (
         <div id="create-restaurant">
                 <h3>Create Entry</h3>
-            <form className="restaurant-form" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div>
                 <label htmlFor="name">Name:</label>
-                <input name="name" onChange={handleChange} value={name} />
+                <input className="title-field" name="name" onChange={handleChange} value={name} />
                 {/* <TextField id="filled-basic" htmlFor="name" label="Name:" variant="filled" input name="name" onChange={handleChange} value={name}/> */}
 
                 <label htmlFor="address">Entry:</label>

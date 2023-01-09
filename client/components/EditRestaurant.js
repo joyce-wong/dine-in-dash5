@@ -48,16 +48,16 @@ render(){
     const {name, address} = this.state;
     const {handleSubmit, handleChange} = this;
     return (
-        <div>
+        <div id='edit-restaurant'>
             <h3>Edit Entry</h3>
-            <form className="restaurant-form" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Title:</label>
-                <input name="name" onChange={handleChange} value={name} />
+                <input className="title-field" name="name" onChange={handleChange} value={name} />
 
                 <label htmlFor="address">Entry:</label>
                 <input className="journal-field" name="address" onChange={handleChange} value={address} />
 
-                <button type="submit">Submit</button>
+                <button className="submit" type="submit">Submit</button>
                 {/* <Button variant="outlined" color="primary">
   Submit
   </Button> */}

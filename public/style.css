@@ -92,11 +92,16 @@ justify-content: center;
     margin-left: auto;
   }
 
+  .title-field {
+    height: auto;
+    width: 30rem;
+  }
+
   .journal-field {
     height: 15rem;
     width: 30rem;
-    margin: 1em;
-    padding: 1em;
+    /* margin: 1em;
+    padding: 1em; */
   }
 
 /* #welcome {
@@ -116,6 +121,15 @@ justify-content: center;
 }
 
 #create-restaurant {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-content: flex-start; */
+  flex-direction: column;
+  align-items: center;
+}
+
+#edit-restaurant {
   position: relative;
   display: flex;
   justify-content: center;
