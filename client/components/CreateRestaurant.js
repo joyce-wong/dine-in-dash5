@@ -63,7 +63,7 @@ class CreateRestaurant extends Component {
                 <label htmlFor="address">Entry:</label>
                 <input className="journal-field" name="address" onChange={handleChange} value={address} />
 
-                <button type="submit">Submit</button>
+                <button className ="submit" type="submit">Submit</button>
                 {/* <Button variant="contained" color="primary">
   Submit
 </Button> */}

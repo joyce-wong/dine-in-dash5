@@ -18,7 +18,9 @@ export class AllRestaurants extends React.Component {
       <main>
       <div className="restaurants">
         <h1>Journal Entries</h1>
-          <CreateRestaurant style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',}}/>
+          <CreateRestaurant 
+          //style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',}}
+          />
           {this.props.restaurants.map(restaurant => (
             <div className="restaurant" key={restaurant.id} >
               <h2 style={{textAlign: 'center'}}>
