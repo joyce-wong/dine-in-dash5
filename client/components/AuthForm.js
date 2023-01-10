@@ -28,9 +28,10 @@ const AuthForm = props => {
     <CssBaseline />
     <div id="auth">
     <Avatar>
-          {/* <LockOutlinedIcon /> */}
         </Avatar>
-  
+        <Typography component="h1" variant="h5">
+          {displayName}
+        </Typography>
       <form onSubmit={handleSubmit} name={name}>
         <div>
           {/* <label htmlFor="username">
@@ -82,9 +83,11 @@ const AuthForm = props => {
         {error && error.response && <div> {error.response.data} </div>}
         <Grid container>
             <Grid item>
-              <Link href="signup" variant="body2">
+              {displayName === "Login" ? <Link href="signup" variant="body2">
                 {"Don't have an account? Sign Up"}
-              </Link>
+              </Link> : <Link href="signup" variant="body2">
+                {"Already have an account? Log In"}
+              </Link>}
             </Grid>
           </Grid>
         </form>
