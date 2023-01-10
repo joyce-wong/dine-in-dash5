@@ -85,7 +85,7 @@ const AuthForm = props => {
             <Grid item>
               {displayName === "Login" ? <Link href="signup" variant="body2">
                 {"Don't have an account? Sign Up"}
-              </Link> : <Link href="signup" variant="body2">
+              </Link> : <Link href="login" variant="body2">
                 {"Already have an account? Log In"}
               </Link>}
             </Grid>
