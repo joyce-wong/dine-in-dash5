@@ -1,12 +1,12 @@
 #app{
   font-family: Roboto;
-  background-color: #83c5be;
+  /* background-color: #83c5be; */
   /* margin-left: 50px; */
 }
 
 body {
   font-family: Roboto;
-  background-color: #83c5be;
+  /* background-color: #83c5be; */
   height: 100vh;
   width: 100vw;
   /* margin-left: 50px; */
@@ -62,7 +62,7 @@ nav a:hover {
 } */
 
 .restaurants {
-background-color: #83c5be;
+/* background-color: #83c5be; */
 font-family: Roboto;
 display: flex;
 flex-direction: column;
@@ -72,7 +72,7 @@ justify-content: center;
 }
 
 .restaurant {
-  background-color: #83c5be;
+  /* background-color: #83c5be; */
   font-family: Roboto;
   position: relative;
   /* flex-direction: row; */
@@ -114,6 +114,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: white;
   height: 100%;
   width: 100%;

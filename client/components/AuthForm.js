@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {authenticate} from '../store'
 import Button from '@material-ui/core/Button'
+import { Container, CssBaseline, Box, Typography, Link, Grid, Avatar, LockOutlinedIcon, TextField } from '@material-ui/core'
 
 /**
  * COMPONENT
@@ -9,24 +10,66 @@ import Button from '@material-ui/core/Button'
 const AuthForm = props => {
   const {name, displayName, handleSubmit, error} = props
 
+  function Copyright() {
+    return (
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="https://mui.com/">
+          Joyce Wong
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+    );
+  }
+
   return (
+    <Container component="main" maxWidth="xs">
+    <CssBaseline />
     <div id="auth">
+    <Avatar>
+          {/* <LockOutlinedIcon /> */}
+        </Avatar>
+  
       <form onSubmit={handleSubmit} name={name}>
         <div>
-          <label htmlFor="username">
+          {/* <label htmlFor="username">
             <small>Username</small>
-          </label>
-          <input name="username" type="text" />
+          </label> */}
+          {/* <input name="username" type="text" /> */}
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="username"
+            label="Username"
+            name="username"
+            autoComplete="username"
+            autoFocus
+            type="text"
+          />
         </div>
         <div>
-          <label htmlFor="password">
+          {/* <label htmlFor="password">
             <small>Password</small>
           </label>
-          <input name="password" type="password" />
+          <input name="password" type="password" /> */}
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+          />
         </div>
         <div>
-          <button type="submit">{displayName}</button>
-          {/* <Button
+          {/* <button type="submit">{displayName}</button> */}
+          <Button
             type="submit"
             fullWidth
             variant="contained"
@@ -34,11 +77,22 @@ const AuthForm = props => {
             // className={classes.submit}
           >
             {displayName}
-          </Button> */}
+          </Button>
         </div>
         {error && error.response && <div> {error.response.data} </div>}
-      </form>
+        <Grid container>
+            <Grid item>
+              <Link href="signup" variant="body2">
+                {"Don't have an account? Sign Up"}
+              </Link>
+            </Grid>
+          </Grid>
+        </form>
     </div>
+    <Box mt={8}>
+        <Copyright />
+      </Box>
+    </Container>
   )
 }
 
