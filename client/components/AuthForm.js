@@ -14,7 +14,7 @@ const AuthForm = props => {
     return (
       <Typography variant="body2" color="textSecondary" align="center">
         {'Copyright © '}
-        <Link color="inherit" href="https://mui.com/">
+        <Link color="inherit" href="https://linkedin.com/joyce-k-wong/">
           Joyce Wong
         </Link>{' '}
         {new Date().getFullYear()}
