@@ -163,8 +163,8 @@ justify-content: center;
 
 .submit {
   position: absolute;
-  bottom: -25px;
-  right: 50rem
+  /* bottom: -25px; */
+  /* right: 30rem; */
 }
 
 /* button {
