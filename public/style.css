@@ -163,8 +163,8 @@ justify-content: center;
 
 .submit {
   position: absolute;
-  bottom: -25px;
-  left: 78rem;
+  bottom: -10px;
+  left: 100rem;
 }
 
 /* button {
@@ -175,9 +175,12 @@ justify-content: center;
 } */
 
 .remove {
-  position: absolute;
+  /* position: absolute;
   bottom: -35px;
-  right:36rem;
+  right:36rem; */
+  margin: 10px;
+  text-align: center;
+  left: 36rem;
 }
 
 input.right {

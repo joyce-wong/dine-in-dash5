@@ -3,6 +3,7 @@ import { connect} from "react-redux";
 import { fetchRestaurants, deleteRestaurant } from "../store/restaurants";
 import { Link } from 'react-router-dom';
 import CreateRestaurant from "./CreateRestaurant";
+import { Button } from "@material-ui/core";
 
 // Notice that we're exporting the AllCampuses component twice. The named export
 // (below) is not connected to Redux, while the default export (at the very
@@ -30,15 +31,20 @@ export class AllRestaurants extends React.Component {
               <p>{restaurant.address}</p>
               <img className="image" src={restaurant.imageUrl} />
               <form onSubmit={(ev) => ev.preventDefault()}>
-                <span style={{justifyContent: 'right'}}>
-              <button
+              <div className="remove">
+
+              {/* <button
               type="submit"
               className="remove"
               onClick={() => this.props.deleteRestaurant(restaurant.id)}
               >
                 Delete
-              </button>
-                </span>
+              </button> */}
+              <Button type="submit" variant="contained" color="primary" onClick={() => this.props.deleteRestaurant(restaurant.id)}>
+  Delete
+</Button>
+              </div>
+                
               </form>
             </div>
           ))}
