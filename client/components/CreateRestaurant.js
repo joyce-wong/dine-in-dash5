@@ -1,12 +1,8 @@
 import React, {Component} from 'react';
 import { createRestaurant } from '../store/restaurants';
 import { connect } from 'react-redux';
-// import Hook from './Hook';
-
-// import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-// import Button from '@material-ui/core/Button';
-import { TextField, Box, Button } from '@material-ui/core';
+import { TextField, Button } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -56,23 +52,11 @@ class CreateRestaurant extends Component {
                 <h3>Create Entry</h3>
             <form onSubmit={handleSubmit}>
                 <div>
-                {/* <label htmlFor="name">Name:</label>
-                <input className="title-field" name="name" onChange={handleChange} value={name} /> */}
                 <TextField fullWidth id="outlined-basic" htmlFor="name" label="Name:" variant="outlined" margin="normal" input name="name" onChange={handleChange} value={name}/>
-
-                {/* <label htmlFor="address">Entry:</label>
-                <input className="journal-field" name="address" onChange={handleChange} value={address} /> */}
                 <TextField fullWidth id="outlined-multiline-flexible" htmlFor="address" label="Entry:" multiline rows={20} variant="outlined" margin="normal" input name="address" onChange={handleChange} value={address}/>
-
-
-                {/* <button className ="submit" type="submit">Submit</button> */}
                 <Button fullWidth type="submit" variant="contained" color="primary">
   Submit
 </Button>
-  {/* <Button variant="outlined" color="primary">
-  Submit
-  </Button> */}
-  {/* <Button className={classes.root}>Styled with Hook API</Button> */}
                 </div>
             </form>
         </div>
