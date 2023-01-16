@@ -24,11 +24,14 @@ const AuthForm = props => {
   }
 
   return (
+    <div id="auth-container">
+    <span id="auth-image"><img src="https://source.unsplash.com/random"/></span>
+    <span id="auth">
+      <div id="auth-fields">
     <Container component="main" maxWidth="xs">
     <CssBaseline />
-    <div id="auth">
-    <Avatar>
-        </Avatar>
+        {/* <Avatar>
+        </Avatar> */}
         <Typography component="h1" variant="h5">
           {displayName}
         </Typography>
@@ -91,11 +94,13 @@ const AuthForm = props => {
             </Grid>
           </Grid>
         </form>
-    </div>
     <Box mt={8}>
         <Copyright />
       </Box>
     </Container>
+    </div>
+    </span>
+    </div>
   )
 }
 

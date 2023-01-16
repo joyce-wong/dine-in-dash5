@@ -81,6 +81,25 @@ nav a:hover {
   width: 130px;
   margin-top: -50px;
 }
+
+#auth-container {
+  display: flex;
+  /* align-items: center; */
+}
+
+#auth-image {
+  flex: 1
+}
+
+#auth {
+  flex: 1;
+}
+
+#auth-fields {
+  display: flex;
+  justify-content: center;
+}
+
 /* form div {
   margin: 1em;
   display: flexbox;
