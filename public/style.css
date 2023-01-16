@@ -74,12 +74,23 @@ nav a:hover {
   justify-content: space-between;
 } */
 
-.logo {
-  display: inline-block;
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  height: 90px;
-  width: 130px;
-  margin-top: -50px;
+  /* height: 90px;
+  width: 130px; */
+  /* margin-top: -25px; */
+}
+
+#title {
+  margin-top: -25px;
+  color: white;
+}
+
+#logo-image{
+  margin-top: -47px;
 }
 
 #auth-container {
