@@ -2,25 +2,40 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
+import { Button } from '@material-ui/core'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div className="logo-container">
-    <h1>My Journal</h1>
     {/* <img className="logo" src="/assets/images/logo.png"/> */}
     <nav>
       {isLoggedIn ? (
-        <div>
+        <div className="nav-container">
           {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
+      <div className="logo">
+        <h1>My Journal</h1>
+      </div>
+      <ul className="nav-links">
+          <li className="nav-item"><Button href="/home" color="primary" variant="contained">
+          Home
+          </Button></li>
+          <li className="nav-item"> <a href="#" onClick={handleClick}>
             Logout
-          </a>
+          </a></li>
+      </ul>
         </div>
       ) : (
-        <div>
+        <div className='nav-container'>
           {/* The navbar will show these links before you log in */}
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
+        <div className="logo">
+          <h1>My Journal</h1>
+        </div>
+        <ul className="nav-links">
+          <li className="nav-item"><Link to="/login">Login</Link></li>
+          <li className="nav-item"> <Button href="/signup" color="primary" variant="contained">
+          Sign Up
+          </Button>
+            </li>
+        </ul>
         </div>
       )}
     </nav>

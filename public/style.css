@@ -26,10 +26,6 @@ label {
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
   height: 90px;
   padding: 30px;
   font-size: 20px;
@@ -37,25 +33,54 @@ nav {
 }
 
 nav a {
-  display: inline-flex;
-  /* flex-direction: row; */
-  align-items: flex-end;
-  justify-content: space-around;
-  padding: 10px;
-  margin: 1em;
   color: #edf6f9;
 }
 
 nav a:hover {
-  display: inline-block;
-  /* flex-direction: row; */
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  margin: 1em;
   color: #9f86c0;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  margin-top: -25px;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  padding: 5px;
+  width: 60px;
+  height: 50px;
+  /* margin: 5px; */
+  line-height: 50px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* .logo-container {
+  -ms-flex-align: center;
+  justify-content: space-between;
+} */
+
+.logo {
+  display: inline-block;
+  align-items: center;
+  height: 90px;
+  width: 130px;
+  margin-top: -50px;
+}
 /* form div {
   margin: 1em;
   display: flexbox;
@@ -110,19 +135,6 @@ justify-content: center;
   border-radius:0px 0px 5px 5px;
 } */
 
-.logo-container {
-  -ms-flex-align: center;
-  justify-content: space-between;
-}
-
-.logo {
-  position: absolute;
-  /* margin-bottom: 2rem;
-  margin-top: 2rem;
-  margin-block-start: 2rem; */
-  height: 90px;
-  width: 130px;
-}
 
 /* .logo {
   position: absolute;
