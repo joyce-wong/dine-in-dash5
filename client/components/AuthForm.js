@@ -25,7 +25,10 @@ const AuthForm = props => {
 
   return (
     <div id="auth-container">
-    <span id="auth-image"><img src="https://source.unsplash.com/random"/></span>
+    <span id="auth-image">
+      {/* <img src="https://source.unsplash.com/random"/> */}
+      <img style={{display: 'block', marginRight: 'auto', marginLeft: 'auto', height: '100vh',}} src="assets/images/auth-image.png" alt="journal" w="100%"/>
+    </span>
     <span id="auth">
       <div id="auth-fields">
     <Container component="main" maxWidth="xs">
