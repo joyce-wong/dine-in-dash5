@@ -66,7 +66,7 @@ async function seed() {
 
   const images = await Promise.all([
     Image.create({
-      userId: 1,
+      restaurantId: 1,
       name: 'default image',
       data: 'https://cdn.animenewsnetwork.com/thumbnails/max300x600/encyc/A7814-6.jpg'
     })

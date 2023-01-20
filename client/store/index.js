@@ -5,10 +5,12 @@ import {composeWithDevTools} from 'redux-devtools-extension'
 import auth from './auth'
 import restaurantsReducer from './restaurants'
 import restaurantReducer from './singleRestaurant'
+import imageReducer from './image'
 
 const reducer = combineReducers({ auth,
 restaurants: restaurantsReducer,
-restaurant: restaurantReducer })
+restaurant: restaurantReducer,
+image: imageReducer })
 const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
 )

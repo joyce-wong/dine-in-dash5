@@ -4,6 +4,8 @@ import { fetchRestaurants, deleteRestaurant } from "../store/restaurants";
 import { Link } from 'react-router-dom';
 import CreateRestaurant from "./CreateRestaurant";
 import { Button } from "@material-ui/core";
+import ImageUploader from "./ImageUploader";
+import EntryImage from "./EntryImage";
 
 // Notice that we're exporting the AllCampuses component twice. The named export
 // (below) is not connected to Redux, while the default export (at the very
@@ -22,6 +24,7 @@ export class AllRestaurants extends React.Component {
           <CreateRestaurant 
           //style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',}}
           />
+          {/* <EntryImage/> */}
           {this.props.restaurants.map(restaurant => (
             <div className="restaurant" key={restaurant.id} >
               <h2 style={{textAlign: 'center'}}>

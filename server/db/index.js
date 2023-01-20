@@ -19,8 +19,8 @@ User.hasMany(Review)
 Reservation.belongsTo(User)
 User.hasMany(Reservation)
 
-User.hasMany(Image);
-Image.belongsTo(User);
+Restaurant.hasMany(Image);
+Image.belongsTo(Restaurant);
 
 Restaurant.belongsToMany(Reservation, {through: 'restaurantReservation'})
 Reservation.belongsToMany(Restaurant, {through: 'restaurantReservation'})
