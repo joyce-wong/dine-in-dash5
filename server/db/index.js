@@ -6,6 +6,7 @@ const User = require('./models/User')
 const Restaurant = require('./models/Restaurant')
 const Reservation = require('./models/Reservation')
 const Review = require('./models/Review')
+const Image = require('./models/Image')
 
 //associations could go here!
 
@@ -17,6 +18,9 @@ User.hasMany(Review)
 
 Reservation.belongsTo(User)
 User.hasMany(Reservation)
+
+User.hasMany(Image);
+Image.belongsTo(User);
 
 Restaurant.belongsToMany(Reservation, {through: 'restaurantReservation'})
 Reservation.belongsToMany(Restaurant, {through: 'restaurantReservation'})
@@ -30,6 +34,7 @@ module.exports = {
     User,
     Restaurant,
     Reservation,
-    Review
+    Review,
+    Image
   },
 }

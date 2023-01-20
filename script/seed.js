@@ -1,6 +1,6 @@
 'use strict'
 
-const {db, models: {User, Reservation, Review, Restaurant} } = require('../server/db')
+const {db, models: {User, Reservation, Review, Restaurant, Image} } = require('../server/db')
 // const {randUserName} = require("@ngneat/falso");
 
 /**
@@ -61,6 +61,14 @@ async function seed() {
       address: 'Fusce sit amet libero leo. Vivamus eget semper lectus. Integer lorem est, porttitor lacinia porttitor ac, facilisis eu eros. Quisque at eros ante. Quisque ullamcorper pretium quam, at maximus nibh sollicitudin in. Maecenas condimentum tincidunt lectus, non bibendum ligula interdum eu. Suspendisse ac elit leo. Aliquam id fringilla sem.',
       imageUrl: 'https://umaiyomu.files.wordpress.com/2019/01/school2.jpg?w=640',
       description: 'Make friends, borrow books from the library, and play the violin.'
+    })
+  ])
+
+  const images = await Promise.all([
+    Image.create({
+      userId: 1,
+      name: 'default image',
+      data: 'https://cdn.animenewsnetwork.com/thumbnails/max300x600/encyc/A7814-6.jpg'
     })
   ])
   
