@@ -53,7 +53,7 @@ async function seed() {
     Restaurant.create({
       name: 'Day Trip to Yubaba\'s Bathhouse',
       address: 'Sed a augue nisi. Sed a efficitur lacus. Maecenas facilisis at quam sit amet sagittis. Proin iaculis nec lacus non vestibulum. Mauris sollicitudin lorem a lectus porttitor, id accumsan dolor feugiat. Sed sed dapibus urna. Nunc eget dapibus orci. Curabitur finibus ipsum a enim luctus, a sollicitudin orci vestibulum. Vestibulum suscipit nunc lorem, elementum egestas tellus placerat sit amet. Ut efficitur dignissim posuere. Sed tellus purus, feugiat vitae blandit faucibus, blandit aliquam risus. Aenean molestie ullamcorper molestie. Nulla ipsum lectus, vulputate non pulvinar non, aliquam sit amet odio.',
-      imageUrl: 'https://studioghiblimovies.com/wp-content/uploads/2017/12/japan-hayao-miyazaki-trees-spirited-away-bathroom-houses-spirit-ben-anime-house-cloud-ghibli-bath-ch-wallpaper-455520.jpg',
+      imageUrl: 'https://cdn.myanimelist.net/s/common/uploaded_files/1445796245-d7fe91522508d41ae3a1136b98680fa8.jpeg',
       description: 'Relax at this bathhouse with river spirits.'
     }),
     Restaurant.create({
